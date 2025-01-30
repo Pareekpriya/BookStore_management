@@ -20,14 +20,11 @@ const BookDetails =()=>{
 
     return(
         <div>
+            <h2>{book.id}</h2>
             <h2>{book.name}</h2>
             <h4>{book.category}</h4>
             <h4>{book.price}</h4>
-            <h4>{book.author}</h4>
-            <p>{book.publishingYear}</p>
-            <img>{book.coverImage}</img>
-            <p>{book.description}</p>
-
+            
          <button onClick={()=><redirect to='/Books'/>}>Back to Books</button>
         </div>
     )
